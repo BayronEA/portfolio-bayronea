@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+
+@layer base {
+  :root {
+    --accent-purple: #6366f1;
+    --accent-blue: #a855f7;
+  }
+}
+
+@layer components {
+  .bg-linear-to-r {
+    @apply bg-gradient-to-r;
+  }
+}
