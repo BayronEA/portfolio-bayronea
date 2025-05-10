@@ -1,0 +1,16 @@
+---
+import Experiencia from "./experiencia.astro";
+import Proyectos from "./proyectos.astro";
+import Tecnologias from './tecnologias.astro';
+---
+
+<div id="portfolio" class="w-full min-h-screen py-16 sm:py-20 relative">
+    <div class="absolute -z-10 top-0 inset-x-0 h-24 bg-linear-to-b dark:from-dark-light dark:to-dark-background from-[#a855f7]/10 via-[#6366f1]/10 to-white/50 transition-colors duration-500 ease-in-out"></div>
+    <div class="absolute -z-10 bottom-0 inset-x-0 h-24 bg-linear-to-t dark:from-dark-light dark:to-dark-background from-[#a855f7]/10 via-[#6366f1]/10 to-white/50 transition-colors duration-500 ease-in-out"></div>
+    <div class="text-center mb-10 flex flex-col items-center" style="opacity: 1; transform: none;">
+        <h2 class="text-4xl font-bold dark:text-white text-text-light_secondary mb-2">Porta<span class="relative bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent">folio</span></h2>
+        <Experiencia />
+        <Proyectos />
+        <Tecnologias />
+     </div>
+</div>

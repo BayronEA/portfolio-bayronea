@@ -1,39 +1,41 @@
 ---
 import '@fontsource-variable/onest';
+import Footer from '../components/Footer.astro';
 import Header from "../components/Header.astro";
 import '../styles/global.css';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Portfolio Wayroon Estrada</title>
 	</head>
-	<body>
-		<div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+	<body class="min-h-screen flex flex-col relative">
+		<div class="fixed top-0 left-0 w-full h-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
 		<Header/>
-		<slot />
+		<main class="flex-grow pt-20 relative z-10">
+			<slot />
+		</main>
+		<Footer/>
 	</body>
 </html>
 
 <style is:global>
-	
 	:root{
 		color-scheme: light dark;
-
 	}
 	html{
 		font-family: 'Onest Variable', sans-serif;
 	}
 	body{
-		background: #000;
 		display: flex;
 		flex-direction: column;
-		height: 100vh;
+		min-height: 100vh;
+		position: relative;
 	}
 </style>
 

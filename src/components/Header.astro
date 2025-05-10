@@ -4,12 +4,16 @@ import jakephoto from '../images/jakephoto.jpg';
 import '../styles/global.css';
 ---
 
-<header class= "w-full flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <Image class="rounded-full w-12 h-12" src={jakephoto} alt="bayron photo"/>
-    <nav class= "flex flex-row gap-x-10">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-    </nav>
-</header>
+
+<header class="fixed top-0 left-0 right-0 w-full bg-black/30 backdrop-blur-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-3 sm:py-4">
+      <Image class="rounded-full w-10 h-10 sm:w-12 sm:h-12 object-cover aspect-square" src={jakephoto} alt="bayron photo"/>
+      <nav class="flex flex-row gap-x-4 sm:gap-x-8 lg:gap-x-10">
+        <a href="#inicio" class="text-sm sm:text-base text-white hover:text-purple-400 transition-colors">Inicio</a>
+        <a href="#sobremi" class="text-sm sm:text-base text-white hover:text-purple-400 transition-colors">Sobre mí</a>
+        <a href="#portafolio" class="text-sm sm:text-base text-white hover:text-purple-400 transition-colors">Portafolio</a>
+        <a href="#contacto" class="text-sm sm:text-base text-white hover:text-purple-400 transition-colors">Contacto</a>
+      </nav>
+    </div>
+  </header>
  

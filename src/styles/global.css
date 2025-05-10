@@ -12,3 +12,123 @@
     @apply bg-gradient-to-r;
   }
 }
+
+@theme {
+  --theme-gradient: linear-gradient(90deg, #6366f1, #a855f7);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --color-dark-background: #050816;
+  --color-dark-light: #111132;
+  --color-dark-border: rgba(186, 104, 200, 0.3);
+
+  --color-light-background: #f4f5f8;
+  --color-light-foreground: #e8ecf4;
+  --color-light-card: #ffffff;
+  --color-light-element: #eef1f8;
+  --color-light-border: #d8e0f0;
+
+  --color-primary: #050816;
+  --color-primary-foreground: #aaa6c3;
+
+  --color-primary-light: #f4f5f8;
+  --color-primary-light-foreground: #444a6e;
+
+  --color-accent-purple: #915eff;
+  --color-accent-blue: #00d8ff;
+
+  --color-accent-light-purple: #6b4fd1;
+  --color-accent-light-blue: #4c8aec;
+
+  --color-border: #333333;
+  --color-border-light: #e0e0e0;
+
+  --color-input: #333333;
+  --color-input-light: #e0e0e0;
+
+  --color-ring: #915eff;
+
+  --color-text-dark: #ffffff;
+  --color-text-light: #2d3256;
+  --color-text-light_secondary: #5a5e8a;
+
+  /* Tags colors */
+  --color-react: #61dafb;
+  --color-typescript: #007acc;
+  --color-tailwindcss: #38bdf8;
+  --color-firebase: #f50057;
+  --color-vercel: #00c786;
+  --color-astro: #f5a623;
+  --color-nextjs: #000000;
+  --color-supabase: #00d17f;
+  --color-node: #3c873a;
+  --color-express: #007bff;
+  --color-mongo: #4db33d;
+  --color-solidworks: #d84e12;
+  --color-cpp: #00599c;
+  --color-labview: #c12026;
+  --color-raspberrypi: #c51a4a;
+  --color-javascript: #f7df1e;
+  --color-matlab: #e16a1e;
+  --color-simulink: #0076a8;
+  --color-redux: #764abc;
+  --color-storybook: #ff4785;
+  --color-sass: #cc6699;
+  --color-jest: #15c213;
+  --color-redux-saga: #8a4eaf;
+  --color-formik: #4d77cf;
+  --color-react-query: #3b82f6;
+  --color-playwright: #4a9a4a;
+  --color-honojs: #5c5c5c;
+  --color-terraform: #7b42bc;
+  --color-aws: #ff9900;
+  --color-prometheus: #e6522c;
+  --color-grafana: #f46800;
+
+  /* Socials colors */
+  --color-linkedin: #0a66c2;
+  --color-github: #181717;
+  --color-x: #1da1f2;
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+@layer components {
+  /* Default gap for mobile devices */
+  .gap-mobile {
+    gap: 32px;
+  }
+
+  /* Adjust gap for devices with height greater than 800px */
+  @media (max-height: 800px) and (max-width: 450px) {
+    .gap-mobile {
+      gap: 10px;
+    }
+  }
+
+  /* Adjust gap for devices with height greater than 900px */
+  @media (min-height: 900px) and (max-width: 450px) {
+    .gap-mobile {
+      gap: 38px;
+    }
+  }
+}

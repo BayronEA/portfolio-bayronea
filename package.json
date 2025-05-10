@@ -6,12 +6,20 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.astro",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx,.astro --fix",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@fontsource-variable/onest": "^5.2.7",
     "@tailwindcss/vite": "^4.1.5",
     "astro": "^5.7.11",
+    "lottie-web": "^5.12.2",
     "tailwindcss": "^4.1.5"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }
