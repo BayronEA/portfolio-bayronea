@@ -48,16 +48,20 @@ import { FlechaDiagonal, Github, LinkedIn, VerMiTrabajo } from '../../icons/inde
     <div class="flex flex-wrap items-center gap-6 sm:gap-4">
         <div class="flex" style="opacity: 1; transform: none;">
             <button type="button" name="view-portfolio" class="flex gap-3 items-center h-10 sm:h-12 py-3 px-6 sm:px-8 text-sm sm:text-base bg-linear-to-r dark:from-[#6366f1] dark:to-[#a855f7] from-accent-light-purple to-accent-light-blue text-white font-bold rounded-full shadow-lg hover:shadow-purple-500/25 transition-colors duration-300 transform hover:scale-105">
-                <VerMiTrabajo/>
-                Ver mi trabajo
+                <a href="#proyectos" class="flex gap-3 items-center">
+                    <VerMiTrabajo/>
+                    Ver mi trabajo
+                </a>
             </button>
         </div>
         <div class="flex" style="opacity: 1; transform: none;">
             <div class="p-0.5 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full shadow-lg hover:shadow-purple-500/25 transition-colors duration-300 transform hover:scale-105">
                 <button type="button" name="contact-me" class="w-full h-10 sm:h-12 px-6 sm:px-8 text-sm sm:text-base bg-dark-background text-white font-bold rounded-full flex items-center justify-center gap-3 border border-white/10">
+                    <a href='#contacto' class="flex gap-3 items-center"> 
                     <FlechaDiagonal/>
-                    Ponte en contacto
-                </button>
+                        Ponte en contacto
+                    </a>
+                    </button>
             </div>
         </div>
     </div>
